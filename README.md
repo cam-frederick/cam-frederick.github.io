@@ -1,1 +1,1 @@
-# camfrederick.github.io
+# cam-frederick.github.io
