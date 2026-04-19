@@ -43,6 +43,24 @@ header p {
   max-width: 480px;
 }
 
+.header-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.header-links a {
+  font-size: 0.9rem;
+}
+
+.app-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  margin-left: 24px;
+}
+
 section {
   margin-bottom: 56px;
 }
