@@ -4,49 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cam Frederick</title>
+    <meta name="description" content="Cam Frederick — Engineering Manager and Senior iOS Engineer based in Austin, TX. Building mobile software at scale." />
+    <meta property="og:title" content="Cam Frederick" />
+    <meta property="og:description" content="Engineering Manager and Senior iOS Engineer based in Austin, TX." />
+    <meta property="og:url" content="https://camfrederick.com" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Cam Frederick</h1>
-        <p>Engineering Manager and Senior iOS Engineer with 7+ years of experience building mobile software. Based in Austin, TX.</p>
-        <div class="header-links">
-          <a href="https://www.linkedin.com/in/cam-frederick/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="cameron-frederick-resume.pdf" target="_blank">Resume</a>
+    <nav class="topbar">
+      <a href="#" class="topbar-brand mono">Cam Frederick</a>
+      <div class="topbar-links">
+        <a href="#work" class="topbar-link mono">Work</a>
+        <a href="#projects" class="topbar-link mono">Projects</a>
+        <a href="#blog" class="topbar-link mono">Blog</a>
+        <a href="#links" class="topbar-link mono">Links</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="site-header">
+        <div class="site-header-content">
+          <div>
+            <h1 class="site-name animate" style="--delay: 0.1s">Cam Frederick</h1>
+            <p class="site-location mono animate" style="--delay: 0.15s">Austin, TX</p>
+          </div>
+
+          <p class="bio animate" style="--delay: 0.3s">
+            7+ years building mobile software that works at scale. Currently leading iOS engineering at Jeppesen ForeFlight.
+          </p>
         </div>
+        <img src="assets/profile.jpg" alt="Cam Frederick" class="profile-photo animate" style="--delay: 0.1s" />
       </header>
 
-      <section>
-        <h2>Work</h2>
-        <div class="app">
-          <div class="app-info">
-            <h3>Jeppesen FliteDeck Pro</h3>
-            <p>Market-leading enterprise aviation app serving 125+ global customers and 9.73M weekly sessions.</p>
-            <p class="role">Engineering Manager & Senior iOS Engineer</p>
-          </div>
-          <div class="app-links">
-            <a class="app-link" href="https://ww2.jeppesen.com/navigation-solutions/flitedeck-pro/" target="_blank" rel="noopener">Site →</a>
-            <a class="app-link" href="https://apps.apple.com/us/app/jeppesen-flitedeck-pro/id530174852" target="_blank" rel="noopener">App Store →</a>
-          </div>
+      <section class="section animate" id="work" style="--delay: 0.52s">
+        <div class="section-header">
+          <span class="mono section-label">Work</span>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-accent" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="card-top">
+                <div class="card-title-group">
+                  <img src="assets/jeppesen-foreflight-icon.png" alt="Jeppesen ForeFlight icon" class="card-icon card-icon--rounded" />
+                  <div>
+                    <h2 class="card-title">Jeppesen ForeFlight</h2>
+                    <span class="card-role mono">Engineering Manager & Senior iOS Engineer</span>
+                  </div>
+                </div>
+                <div class="card-links">
+                  <a href="https://www.jeppesenforeflight.com/" target="_blank" rel="noopener" class="card-link">Site ↗</a>
+                  <a href="https://apps.apple.com/us/app/jeppesen-flitedeck-pro/id530174852" target="_blank" rel="noopener" class="card-link">App Store ↗</a>
+                </div>
+              </div>
+              <p class="card-desc">
+                Leading iOS engineering for FliteDeck Pro — a market-leading enterprise aviation app serving commercial airlines globally with nearly 10M weekly sessions.
+              </p>
+              <div class="card-tags">
+                <span class="tag">iOS</span>
+                <span class="tag">Swift</span>
+                <span class="tag">SwiftUI</span>
+                <span class="tag">Enterprise</span>
+                <span class="tag">Aviation</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <div class="app">
-          <div class="app-info">
-            <h3>StudentHustle</h3>
-            <p>A school-community app connecting high school students with local families for age-appropriate jobs like tutoring, babysitting, and yard work.</p>
-            <p class="role">Founding Engineer</p>
-          </div>
-          <a class="app-link" href="https://studenthustle.app" target="_blank" rel="noopener">Visit site →</a>
+      <section class="section animate" id="projects" style="--delay: 0.66s">
+        <div class="section-header">
+          <span class="mono section-label">Projects</span>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-accent" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="card-top">
+                <div class="card-title-group">
+                  <img src="assets/studenthustle-icon.jpg" alt="Student Hustle icon" class="card-icon card-icon--rounded" />
+                  <div>
+                    <h2 class="card-title">Student Hustle</h2>
+                    <span class="card-role mono">Founding Engineer</span>
+                  </div>
+                </div>
+                <div class="card-links">
+                  <a href="https://studenthustle.app" target="_blank" rel="noopener" class="card-link">Site ↗</a>
+                  <a href="https://apps.apple.com/us/app/student-hustle/id6626762318" target="_blank" rel="noopener" class="card-link">App Store ↗</a>
+                </div>
+              </div>
+              <p class="card-desc">
+                A school-community app connecting high school students with local families for age-appropriate jobs like tutoring, babysitting, and yard work.
+              </p>
+              <div class="card-tags">
+                <span class="tag">iOS</span>
+                <span class="tag">SwiftUI</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <footer>
-        <p>© 2026 Cam Frederick</p>
+      <section class="section animate" id="blog" style="--delay: 0.8s">
+        <div class="section-header">
+          <span class="mono section-label">Blog</span>
+        </div>
+        <div class="blog-empty">
+          <span class="mono">Coming soon.</span>
+        </div>
+      </section>
+
+      <section class="section animate" id="links" style="--delay: 0.9s">
+        <div class="section-header">
+          <span class="mono section-label">Links</span>
+        </div>
+        <div class="link-list">
+          <a href="https://www.linkedin.com/in/cam-frederick/" target="_blank" rel="noopener" class="link-row">
+            <span class="link-row-label mono">LinkedIn</span>
+            <span class="link-row-arrow">↗</span>
+          </a>
+          <a href="https://github.com/cam-frederick" target="_blank" rel="noopener" class="link-row">
+            <span class="link-row-label mono">GitHub</span>
+            <span class="link-row-arrow">↗</span>
+          </a>
+          <a href="cameron-frederick-resume.pdf" target="_blank" class="link-row">
+            <span class="link-row-label mono">Resume</span>
+            <span class="link-row-arrow">↗</span>
+          </a>
+          <a href="mailto:camfrederick1@gmail.com" class="link-row">
+            <span class="link-row-label mono">Email</span>
+            <span class="link-row-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer animate" style="--delay: 0.9s">
+        <span class="mono">© 2026 Cam Frederick</span>
       </footer>
-    </div>
+    </main>
   </body>
 </html>
