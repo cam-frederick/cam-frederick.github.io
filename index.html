@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +36,7 @@
           </div>
 
           <p class="bio animate" style="--delay: 0.3s">
-            7+ years building mobile software that works at scale. Currently leading iOS engineering at Jeppesen ForeFlight.
+            Dad, engineer, builder. Leading iOS engineering at Jeppesen ForeFlight and building apps on the side.
           </p>
         </div>
         <img src="assets/profile.jpg" alt="Cam Frederick" class="profile-photo animate" style="--delay: 0.1s" />
@@ -114,9 +116,25 @@
         <div class="section-header">
           <span class="mono section-label">Blog</span>
         </div>
-        <div class="blog-empty">
-          <span class="mono">Coming soon.</span>
+        <div class="post-list">
+          {% for post in site.posts limit:3 %}
+          <a href="{{ post.url }}" class="post-list-item">
+            <div class="post-list-meta">
+              <span class="mono">{{ post.date | date: "%B %-d, %Y" }}</span>
+            </div>
+            <h2 class="post-list-title">{{ post.title }}</h2>
+          </a>
+          {% else %}
+          <div class="blog-empty">
+            <span class="mono">Coming soon.</span>
+          </div>
+          {% endfor %}
         </div>
+        {% if site.posts.size > 3 %}
+        <div class="blog-more">
+          <a href="/blog/" class="mono blog-more-link">All posts →</a>
+        </div>
+        {% endif %}
       </section>
 
       <section class="section animate" id="links" style="--delay: 0.9s">

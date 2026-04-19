@@ -1,0 +1,36 @@
+---
+layout: default
+title: Blog
+---
+
+<main class="container">
+  <section class="section">
+    <div class="section-header">
+      <span class="mono section-label">Blog</span>
+    </div>
+
+    {% if site.posts.size > 0 %}
+    <div class="post-list">
+      {% for post in site.posts %}
+      <a href="{{ post.url }}" class="post-list-item">
+        <div class="post-list-meta">
+          <span class="mono">{{ post.date | date: "%B %-d, %Y" }}</span>
+        </div>
+        <h2 class="post-list-title">{{ post.title }}</h2>
+        {% if post.excerpt %}
+        <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="blog-empty">
+      <span class="mono">Coming soon.</span>
+    </div>
+    {% endif %}
+  </section>
+
+  <footer class="site-footer">
+    <span class="mono">© 2026 Cam Frederick</span>
+  </footer>
+</main>
