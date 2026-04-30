@@ -498,6 +498,15 @@ a { color: inherit; text-decoration: none; }
 
 .post-content p { margin-bottom: 1.4em; }
 
+.post-content hr {
+  border: none;
+  width: 40px;
+  height: 1px;
+  background: var(--text-muted);
+  opacity: 0.35;
+  margin: 2.4em auto;
+}
+
 .post-content h2 {
   font-family: var(--font-mono);
   font-size: 0.78rem;
