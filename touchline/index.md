@@ -10,7 +10,7 @@ image: /assets/touchline/touchline-og.jpg
   <section class="tl-hero">
     <img src="/assets/touchline-icon.png" alt="TouchLine app icon" class="tl-hero-icon" />
     <span class="mono tl-eyebrow">Now on the App Store</span>
-    <h1 class="tl-title">TouchLine</h1>
+    <h1 class="tl-title">TouchLine: Tactics Board</h1>
     <p class="tl-tagline">A soccer tactics board for coaches. Animate plays, build your squad, and draw it up — on iPhone, iPad, and Mac.</p>
     <div class="tl-cta">
       <!-- TODO: replace the href below with your real App Store link, e.g. https://apps.apple.com/app/touchline/id0000000000 -->
