@@ -525,6 +525,210 @@ a { color: inherit; text-decoration: none; }
 }
 .back-link:hover { color: var(--accent); }
 
+/* ─── TouchLine product page ──────────────────── */
+.tl-page { padding-bottom: 96px; }
+
+.tl-hero {
+  text-align: center;
+  padding: 72px 0 8px;
+}
+
+.tl-hero-icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto 24px;
+  box-shadow: 0 10px 34px rgba(26, 26, 23, 0.16);
+}
+
+.tl-eyebrow {
+  display: inline-block;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.tl-title {
+  font-family: var(--font-mono);
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.tl-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto 32px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+.tl-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.tl-appstore {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  background: var(--text);
+  color: var(--bg);
+  padding: 11px 22px;
+  border-radius: 12px;
+  transition: transform 0.15s ease, background 0.2s;
+}
+
+.tl-appstore:hover {
+  transform: translateY(-2px);
+  background: #000;
+}
+
+.tl-appstore svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
+.tl-appstore-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.tl-appstore-label small {
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.tl-appstore-label strong {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+
+.tl-price-note { color: var(--text-dim); }
+
+/* iPhone showcase row */
+.tl-shots {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tl-shot {
+  width: 208px;
+  margin: 0;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 44px rgba(26, 26, 23, 0.12);
+  background: #0b3b1f;
+}
+
+.tl-shot img {
+  display: block;
+  width: 100%;
+}
+
+/* Feature grid */
+.tl-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-top: none;
+}
+
+.tl-feature {
+  background: var(--surface);
+  padding: 30px 30px 32px;
+  transition: background 0.2s;
+}
+
+.tl-feature:hover { background: #fdfcfa; }
+
+.tl-feature-label {
+  display: block;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.tl-feature h3 {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.tl-feature p {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+/* iPad / universal showcase */
+.tl-ipad { padding: 64px 0 8px; }
+
+.tl-ipad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.tl-ipad-grid img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 44px rgba(26, 26, 23, 0.10);
+}
+
+.tl-ipad-note {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 24px;
+}
+
+/* Info block (premium / support / legal) */
+.tl-info {
+  max-width: 100%;
+  margin-top: 24px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.tl-info h2:first-child { margin-top: 0; }
+
+@media (max-width: 640px) {
+  .tl-hero { padding-top: 48px; }
+  .tl-shots { gap: 14px; padding: 40px 0; }
+  .tl-shot { width: 158px; }
+  .tl-features { grid-template-columns: 1fr; }
+  .tl-ipad-grid { grid-template-columns: 1fr; }
+  .tl-ipad { padding-top: 48px; }
+}
+
 /* ─── Footer ──────────────────────────────────── */
 .site-footer { padding: 40px 0; }
 
